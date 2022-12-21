@@ -1,28 +1,75 @@
 /* @import "./pokedex.css"; */
+
 body {
   background-color: var(--grass);
 }
 
 .card-header {
   width: 100%;
-  height: 45vh;
+  height: 50vh;
   background-color: var(--grass);
 }
 
-.card-header .header {
+.header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: center;
+  padding: 0 1rem;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.header .name {
+  font-size: 2.5rem;
+}
+
+.header .number {
+  font-size: 1.5rem;
+}
+
+.types {
+  padding-left: 1rem;
+}
+
+.types ol {
+  list-style: none;
+  display: flex;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.type {
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  text-align: center;
+  border-radius: 1rem;
+  filter: brightness(1.15);
+}
+
+.image {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  height: 50%;
 }
 
 .card-details {
   width: 100%;
-  height: 55vh;
+  height: 50vh;
   background-color: #fff;
 
   border-radius: 50px 50px 0 0;
 }
 
-li.type {
-  list-style: none;
-}
+/* .header,
+.types,
+.image {
+  background-color: #904c77;
+} */
